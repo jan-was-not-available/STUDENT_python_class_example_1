@@ -1,7 +1,7 @@
 #  Define the Student class
 class Student:
     def __init__(self, name, grade_level, scores):
-        self.name = "name"                  # string
+        self.name = name                 # string
         self.grade_level = grade_level    # int (e.g., 9, 10, 11)
         self.scores = scores              # list of numbers
         self.average = self.calculate_average()  # computed property
@@ -25,13 +25,13 @@ class Student:
 
 
     def get_letter_grade(self):     # Return a string that indicates the student's letter grade
-        if self.average >= 63:
-            return "D"
-        elif self.average >= 70:
-            return "C"
+        if self.average >= 90:
+            return "A"
         elif self.average >= 80:
             return "B"
-        elif self.average >= 90:
-            return "A"
+        elif self.average >= 70:
+            return "C"
+        elif self.average >= 63:
+            return "D"
         else:
             return "F"

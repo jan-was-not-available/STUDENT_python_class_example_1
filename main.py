@@ -37,12 +37,12 @@ print("-----------------------------------------\n") # Horizontal Line
 print("SECTION 2\n")
 
 # Greetings and passing
-s1.greet
+s1.greet()
 print("Passing:", s1.is_passing())
 
 print() # Blank Line
 
-s2.greet
+s2.greet()
 print("Passing:", s2.is_passing())
 
 print("-----------------------------------------\n") # Horizontal Line
